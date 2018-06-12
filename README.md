@@ -12,12 +12,11 @@
 
 
 ##### Deliverables
-* route for '/brews' that displays all of your coffees as links to their show pages
-* route to create a new brew
-* route to edit a brew
+*** route for '/brews' that displays all of your coffees as links to their show pages
+*** route to create a new brew
+*** route to edit a brew
 * route to delete a brew
 * route to '/brews/strongest' find the brews with the highest strength
 
 #### Bonus
-* strength should only be from 1-5 
-
+* strength should only be from 1-5
