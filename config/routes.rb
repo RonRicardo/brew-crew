@@ -5,8 +5,7 @@ Rails.application.routes.draw do
   # * route to edit a brew
   # * route to delete a brew
   # * route to '/brews/strongest' find the brews with the highest strength
+  get '/brews/strongest', to: 'brews#strongest'
   resources :brews, only: [:index, :show, :create, :new, :edit, :update, :destroy]
-
-
 
 end

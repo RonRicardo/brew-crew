@@ -33,6 +33,11 @@ class BrewsController < ApplicationController
     redirect_to brews_path
   end
 
+  def strongest
+    @brews = Brew.all.sort_by do |brew| brew.strength end.reverse
+   render 'brews/index.html.erb'
+  end
+
   private
   def brew_params
     params.require(:brew).permit(:blend_name, :origin, :notes, :strength)
